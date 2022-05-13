@@ -7,6 +7,8 @@ import { Component,} from '@angular/core';
 })
 export class SearchBarComponent {
 
+  private debounceTimer?: NodeJS.Timeout;
+
   constructor() { }
   onQueryChanged( query: string = ' ' ) {
 
