@@ -15,7 +15,7 @@ export class SearchBarComponent {
     if (this.debounceTimer)clearTimeout(this.debounceTimer);
     this.debounceTimer=setTimeout(()=>{
       console.log('mandar este Query:',Query);
-    },1000);
+    },350);
 
 
     console.log(query)
