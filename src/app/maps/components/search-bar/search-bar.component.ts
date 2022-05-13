@@ -1,4 +1,5 @@
-import { Component,} from '@angular/core';
+import { Component, Query,} from '@angular/core';
+import { timeout } from 'rxjs';
 
 @Component({
   selector: 'app-search-bar',
@@ -11,6 +12,11 @@ export class SearchBarComponent {
 
   constructor() { }
   onQueryChanged( query: string = ' ' ) {
+    if (this.debounceTimer)clearTimeout(this.debounceTimer);
+    this.debounceTimer=setTimeout(()=>{
+      console.log('mandar este Query:',Query);
+    },1000);
+
 
     console.log(query)
   }
