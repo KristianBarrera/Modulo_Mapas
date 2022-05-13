@@ -23,9 +23,11 @@
       "es2020",
       "dom"
     ]
-    "types:" [
+    "types": [
       "node"
-    ]
+    ],
+      
+    
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
