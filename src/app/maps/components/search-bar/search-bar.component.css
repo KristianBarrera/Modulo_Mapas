@@ -1,7 +1,7 @@
 .search-container{
 position: fixed;
 top: 20px;
-left: 20px;
+width: 270px;
 
 background-color:white;
 padding: 5px;
