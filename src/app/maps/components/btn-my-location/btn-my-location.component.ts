@@ -16,10 +16,10 @@ export class BtnMyLocationComponent {
 
   goToMyLocation(){
 
-    if (this.placesService.isUserLocationReady) throw Error('No hay ubicacion de usuario');
-    if (this.mapService.isMapReady) throw Error('No hay mapa disponible');
+    if ( !this.placesService.isUserLocationReady) throw Error('No hay ubicacion de usuario');
+    if ( !this.mapService.isMapReady) throw Error('No hay mapa disponible');
     
-this.mapService.flyto( this.placesService.userlocation!);
+this.mapService.flyto( this.placesService.userlocation! );
     
   }
 
